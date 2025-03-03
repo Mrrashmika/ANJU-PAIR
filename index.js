@@ -18,7 +18,7 @@ app.use(express.static(__path + '/public')); // Serve files from the "public" di
 app.use('/server', server);
 app.use('/code', code);
 
-app.use('/pair', async (req, res, next) => {
+app.use('/pair-code', async (req, res, next) => {
     res.sendFile(__path + '/pair.html');
 });
 
